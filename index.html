@@ -10,12 +10,52 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla Weather App</title>
   </head>
   <body>
     <div class="container">
-      <h1>Hello World</h1>
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm">
+              New York City
+              <br />
+              Tue, 2:00 PM
+              <br />
+              Partly cloudy
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt=""
+              />
+              31°C | °F
+            </div>
+            <div class="col-sm">
+              Precipitation: 20%
+              <br />
+              Humidity: 41%
+              <br />
+              Wind: 10 km/h
+            </div>
+          </div>
+        </div>
+      </div>
+      <small>
+        <a href="https://github.com/amaking7/weather-app" target="_blank"
+          >Open-source code</a
+        >
+        by Amanda King
+      </small>
     </div>
     <script src="src/app.js"></script>
   </body>
