@@ -4,15 +4,36 @@ body {
   font-size: 18px;
 }
 
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
 }
 
-h1 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  margin-bottom: 0;
+.location-overview {
+  margin-bottom: 16px;
+}
+
+.weather-temperature img {
+  margin-right: 16px;
+  float: left;
+  height: 64px;
+  width: 64px;
+}
+
+.current-city-temperature {
+  font-weight: 500;
+  font-size: 64px;
+}
+
+.weather-units {
+  position: relative;
+  top: -34px;
 }
