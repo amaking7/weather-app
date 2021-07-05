@@ -54,4 +54,3 @@ search("New York");
 
 let form = document.querySelector("#search-bar");
 form.addEventListener("submit", handleSubmit);
-// Keep getting "app.js:56 Uncaught TypeError: Cannot read property 'addEventListener' of null" error for line 56
