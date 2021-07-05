@@ -38,8 +38,20 @@ function displayTemperature(response) {
   currentWeatherIcon.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "4d85cd59016d6a2d49846056378f35f1";
-let city = "New York";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "4d85cd59016d6a2d49846056378f35f1";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("New York");
+
+let form = document.querySelector("#search-bar");
+form.addEventListener("submit", handleSubmit);
+// Keep getting "app.js:56 Uncaught TypeError: Cannot read property 'addEventListener' of null" error for line 56
