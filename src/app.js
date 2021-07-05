@@ -32,6 +32,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "4d85cd59016d6a2d49846056378f35f1";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`;
+let city = "New York";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
