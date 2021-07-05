@@ -37,3 +37,7 @@ h1 {
   position: relative;
   top: -34px;
 }
+
+#weather-description {
+  text-transform: capitalize;
+}

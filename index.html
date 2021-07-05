@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,10 +25,10 @@
         <div class="card-body">
           <div class="row">
             <div class="col-sm location-overview">
-              <h1>New York City</h1>
+              <h1 id="current-city">New York City</h1>
               Tue, 2:00 PM
               <br />
-              Partly cloudy
+              <span id="weather-description">Partly cloudy</span>
             </div>
           </div>
 
@@ -37,15 +38,16 @@
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="Partly cloudy"
               />
-              <span class="current-city-temperature">31</span
+              <span class="current-city-temperature" id="current-temperature"
+                >31</span
               ><span class="weather-units">°C | <a href="#">°F</a></span>
             </div>
             <div class="col-sm">
-              Precipitation: 20%
+              Precipitation: n/a
               <br />
-              Humidity: 41%
+              Humidity: <span id="current-city-humidity">41</span>%
               <br />
-              Wind: 10 km/h
+              Wind: <span id="current-city-wind">10</span> km/h
             </div>
           </div>
         </div>
