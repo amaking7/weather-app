@@ -11,6 +11,10 @@ h1 {
   margin-bottom: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -36,6 +40,11 @@ h1 {
 .weather-units {
   position: relative;
   top: -34px;
+}
+
+.weather-units .active {
+  color: #333;
+  cursor: default;
 }
 
 #weather-description {
