@@ -47,6 +47,25 @@ a {
   cursor: default;
 }
 
+.future-forecast {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.future-forecast-day {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.future-forecast-temperatures {
+  font-size: 14px;
+}
+
+.future-forecast-temp-min {
+  opacity: 0.6;
+}
+
 #weather-description {
   text-transform: capitalize;
 }
