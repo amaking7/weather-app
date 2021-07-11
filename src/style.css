@@ -66,6 +66,10 @@ a {
   opacity: 0.6;
 }
 
+.footnote {
+  font-size: 12px;
+}
+
 #weather-description {
   text-transform: capitalize;
 }
